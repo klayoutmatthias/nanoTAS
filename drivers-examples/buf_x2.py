@@ -2,12 +2,12 @@
 # specifies the subcircuit pins
 # "power" and "gnd" ports are mandatory. The other
 # port names are arbitrary, word-like names.
-pins("i", "nq", "power", "gnd")
+pins("i", "q", "power", "gnd")
 
 # Specifies the load capacitances in fF
 # This line is optional. If missing the capa_table
 # from the configuration file is used
-# capa_table(1, 2, 4, 8, 16)
+capa_table(4,8, 16, 32, 64)
 
 # Specifies the input slews in ps
 # This line is optional. If missing the slew_table
@@ -19,10 +19,11 @@ pins("i", "nq", "power", "gnd")
 i(edge)
 
 # Declares node "nq" as the output to be probed
-# "i_nq" is the description string for this measurement
-# ("i to nq")
-nq(probe("i_nq"))
+# "i_q" is the description string for this measurement
+# ("i to q")
+q(probe("i_q"))
 
 # Runs the analysis
 collect()
+
 

@@ -2,6 +2,11 @@
 # Specifies the path to the drivers files
 drivers = "drivers-examples/*.py"
 
+# Specifies the path of the output files (no file output
+# if missing)
+# In this string, %name% is substituted by the cell name.
+# output = "results/%name%.nt"
+
 # Specifies the file path for the transistor models
 models = "models.hsp"
 

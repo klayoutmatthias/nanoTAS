@@ -18,7 +18,16 @@ for fn in glob.glob(config.drivers):
   print("\nRunning nanoTAS on cell " + name + " ...\n")
 
   with open(fn) as file:
+
     driver = Driver(name, config)
     exec(file.read(), globals(), driver.vars)
     driver.results.write()
+
+    if "output" in config.__dict__:
+
+      outputFile = config.output.replace("%name%", name)
+      with open(outputFile, "w") as file:
+        driver.results.write(file)
+        print("Results written to " + outputFile + ".\n")
+      
 
