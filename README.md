@@ -19,7 +19,7 @@ The requirements are:
 A sample for the configuration file can be found in `config.py.sample`. Copy the file to
 "config.py" and edit it. For details see the comments inside this file.
 
-For the driver files, samples are provided in "drivers-examples". For 
+For the driver files, samples are provided in "drivers-examples".
  
 ## Basic usage
 
