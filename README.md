@@ -67,6 +67,7 @@ The collected waveforms are analysed to get the measurements:
  * Simplify the production of driver files
  * Support for hold/setup time extraction for latches and FF's
  * Generation of .lib files
+ * Assertions for checking the correctness of the driver's logic
 
 
 
