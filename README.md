@@ -62,14 +62,11 @@ The collected waveforms are analysed to get the measurements:
  * The delay times are measured between the 50% transitions of input and
    output.
    
-   
-   
+## TODO
 
-
-
-The 
-
-
+ * Simplify the production of driver files
+ * Support for hold/setup time extraction for latches and FF's
+ * Generation of .lib files
 
 
 
