@@ -49,7 +49,7 @@ class High(Function):
   """
 
   def makeCircuit(self, circuit, port, vdd, slew, capa, config, polarity):
-    circuit.VoltageSource("high_" + port, pin, "gnd", vdd)
+    circuit.VoltageSource("high_" + port, port, "gnd", vdd)
 
 
 class Low(Function):
@@ -59,7 +59,7 @@ class Low(Function):
   """
 
   def makeCircuit(self, circuit, port, vdd, slew, capa, config, polarity):
-    circuit.VoltageSource("low_" + port, pin, "gnd", 0)
+    circuit.VoltageSource("low_" + port, port, "gnd", 0)
 
 
 class PositiveTransition(Function):
