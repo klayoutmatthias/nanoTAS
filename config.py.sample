@@ -1,0 +1,42 @@
+
+# Specifies the path to the drivers files
+drivers = "drivers-examples/*.py"
+
+# Specifies the file path for the transistor models
+models = "models.hsp"
+
+# Specifies the nominal supply voltage in V
+nom_voltage = 3.3
+
+# Specifies the directory and file path where the Spice netlists are found
+# In this string, %name% is substituted by the cell name.
+netlist_pattern = "cells/%name%.sp"
+
+# Provides the table of input slews in ps
+# This is the default table. Per-driver tables can 
+# be specified there with slew_table(...).
+slew_table = [ 50.0, 100.0, 200.0, 400.0, 800.0 ]
+
+# Provides the tables of output capacitances in fF
+# This is the default table. Per-driver tables can 
+# be specified there with capa_table(...).
+capa_table = [ 2, 4, 8, 16, 32 ]
+
+# Specifies the time resolution for the simulation in ps
+step = 1
+
+# Specifies the setup time for the simulation in ps
+# The setup time is the idel time before the input signal is triggered.
+# This allows the simulator to settle before the sequence is started.
+setup = 10
+
+# Specifies the maximum simulation time in ps
+# This value should be bigger than the maximum expected delay plus 
+# rise/fall time.
+stop = 2000
+
+# Specifies the temperature (degree Celsius)
+# temperature = 25
+
+# Specifies whether to plot the results for debugging
+# plot = True
